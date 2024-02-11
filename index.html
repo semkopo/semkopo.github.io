@@ -1,3 +1,8 @@
+st Widths: Adjust the widths of the images and the text <div> to ensure they fit nicely side by side.
+Here’s an updated version of your HTML code with the necessary modifications:
+
+HTML
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,13 +10,15 @@
         h1 {
             color: red;
             text-align: center;
-            font-size: 50;
+            font-size: 50px;
         }
         p {
             text-align: center;
         }
-         h2 {text-align: center;
-                font-size: 35;}
+        h2 {
+            text-align: center;
+            font-size: 35px;
+        }
         body {
             background-color: blue;
         }
@@ -25,19 +32,21 @@
             width: 400px;
             height: 400px;
         }
+        .text-container {
+            float: left;
+            width: 50%; /* Adjust the width as needed */
+        }
     </style>
 </head>
 <body>
     <h1>Semppa's Website</h1>
     <p>Welcome to my astonishing GitHub website, which tells you about a weird sea creature</p>
-    <h2>Portuguese Man o´ War</h2>
-    <p> 
- <img src="portugalinsotalaiva.jpg" alt="Sea Creature" style="float:left;width:25%;"> 
- <img src="Portuguesemanowar2.jpg" alt="Deadly Animal" style="float:right;width:25%"> 
-  dfgjdfgijodfgijojiodfgjodfognodfgioijmodfgiodgio
-        dfgdfjudgjdgjjdfjgiu
- </p> 
-    
+    <h2>Portuguese Man o' War</h2>
+    <div class="text-container">
+        <p>
+            The Portuguese Man o' War is a fascinating marine organism. It may look like a single creature, but it's actually a colony of specialized organisms working together. Its long tentacles can deliver painful stings to humans, so it's best to admire from a safe distance.
+        </p>
+    </div>
     <img src="portugalinsotalaiva.jpg" alt="Sea Creature" />
     <img class="right" src="Portuguesemanowar2.jpg" alt="Deadly Animal" />
 </body>
